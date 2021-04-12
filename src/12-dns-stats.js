@@ -26,6 +26,7 @@ function getDNSStats(domains) {
     const arr = domains[i].split('.');
     let resStr = '';
     for (let y = arr.length - 1; y >= 0; y--) {
+      resStr += '.';
       resStr += arr[y];
       if (!res[resStr]) {
         res[resStr] = 1;
