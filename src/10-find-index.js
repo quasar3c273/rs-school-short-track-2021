@@ -17,6 +17,6 @@ function findIndex(array, value) {
     if (arr[i] === value) return i;
   }
   return 0;
-};
+}
 
 module.exports = findIndex;
