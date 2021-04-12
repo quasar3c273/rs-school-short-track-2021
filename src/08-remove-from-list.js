@@ -16,7 +16,7 @@
  *   this.next = null;
  * }
  */
-const removeKFromList = (l, k) => {
+function removeKFromList(l, k) {
   let list = l;
   while (list.next) {
     if (list.value === k) {
@@ -26,6 +26,6 @@ const removeKFromList = (l, k) => {
     list = list.next;
   }
   return l;
-};
+}
 
 module.exports = removeKFromList;
