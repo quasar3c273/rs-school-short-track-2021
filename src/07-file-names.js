@@ -19,7 +19,7 @@ const renameFiles = (names) => {
     let counter = 1;
     for (let i = index + 1; i < names.length; i++) {
       if (result[i] === el) {
-        result[i] += `(${counter})`;
+        result[i] += counter;
         counter++;
       }
     }
