@@ -13,7 +13,7 @@
  */
 function findIndex(array, value) {
   const arr = array;
-  for (let i = 1; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i] === value) return i;
   }
   return 0;
