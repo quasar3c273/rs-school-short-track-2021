@@ -16,7 +16,6 @@
  *   this.next = null;
  * }
  */
-
 const removeKFromList = (l, k) => {
   let list = l;
   while (list.next) {
@@ -26,7 +25,7 @@ const removeKFromList = (l, k) => {
     }
     list = list.next;
   }
-  return list;
+  return l;
 };
 
 module.exports = removeKFromList;
