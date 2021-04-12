@@ -13,7 +13,7 @@
  * the output should be ["file", "file(1)", "image", "file(1)(1)", "file(2)"]
  *
  */
-const renameFiles = (names) => {
+function renameFiles(names) {
   const result = names.slice();
   result.forEach((el, index) => {
     let counter = 1;
@@ -25,6 +25,6 @@ const renameFiles = (names) => {
     }
   });
   return result;
-};
+}
 
 module.exports = renameFiles;
